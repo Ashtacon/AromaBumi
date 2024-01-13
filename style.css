@@ -68,6 +68,7 @@
 #hero {
   height: 100vh;
   background-image: url("img/Coffe\ Header.png");
+  background-size: cover;
   background-color: #000;
   margin-top: -8rem;
   padding-bottom: 1px;
@@ -166,15 +167,24 @@
   width: 30%;
 }
 
-/* ! Album */
-
-#album {
-  justify-content: center;
+.btn-content {
+  padding: 1rem 5rem;
+  border: none;
+  font-size: 1rem;
+  background-color: #a8201a;
+  margin: 2rem 0;
+  color: #fff;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
+/* ! Album */
 
 #album .container h1 {
   color: var(--heading);
-  font-size: 2.2rem;
+  font-size: 2.5rem;
 }
 
 #album .container h1 a {
@@ -183,10 +193,8 @@
 }
 
 .album-wrapper {
+  width: 70%;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
+  gap: 2.5rem;
 }
