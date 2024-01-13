@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #00000057;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5555556f;
+  border: 2px solid #14364262;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Prepare */
+:root {
+  --heading: #0f8b8d;
+  --highlight: #ec9a29;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "Lato";
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 999;
+  padding: 2rem 4rem;
+  align-items: center;
+}
+
+.brand img {
+  width: 300px !important;
+}
+
+.nav-link ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link ul li a {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+/* Hero */
+#hero {
+  height: 100vh;
+  background-image: url("img/Coffe\ Header.png");
+  background-color: #000;
+  margin-top: -8rem;
+  padding-bottom: 1px;
+  position: relative;
+  border-radius: 0 0 20px 20px;
+  -webkit-border-radius: 0 0 20px 20px;
+  -moz-border-radius: 0 0 20px 20px;
+  -ms-border-radius: 0 0 20px 20px;
+  -o-border-radius: 0 0 20px 20px;
+}
+
+#hero .container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #143642b2;
+  flex-direction: column;
+  z-index: 1;
+  border-radius: 0 0 20px 20px;
+  -webkit-border-radius: 0 0 20px 20px;
+  -moz-border-radius: 0 0 20px 20px;
+  -ms-border-radius: 0 0 20px 20px;
+  -o-border-radius: 0 0 20px 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 4rem;
+  color: #fff;
+}
+
+.moto {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* Main */
+
+/* ! Content */
+
+#main {
+  padding: 4rem 0;
+}
+#main .container {
+  flex-direction: column;
+  gap: 10rem;
+}
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 7rem;
+}
+.content img.who {
+  border-radius: 15px;
+  aspect-ratio: 9/12;
+  width: 18rem;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.content img.products {
+  border-radius: 15px;
+  aspect-ratio: 1/1;
+  width: 18rem;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.content img.hang {
+  border-radius: 15px;
+  aspect-ratio: 9/11;
+  width: 18rem;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.content-title {
+  font-size: 2.5rem;
+  color: var(--heading);
+  box-sizing: border-box;
+  display: inline-block;
+  border-bottom: 5px solid var(--highlight);
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: left;
+}
+
+.description {
+  width: 30%;
+}
+
+/* ! Album */
+
+#album {
+  justify-content: center;
+}
+
+#album .container h1 {
+  color: var(--heading);
+  font-size: 2.2rem;
+}
+
+#album .container h1 a {
+  color: var(--highlight);
+  text-decoration: underline;
+}
+
+.album-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
