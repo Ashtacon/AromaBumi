@@ -195,6 +195,27 @@
 .album-wrapper {
   width: 70%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 2.5rem;
+  gap: 5rem;
+  margin-top: -8rem;
+}
+
+.album-wrapper img {
+  width: 200px;
+}
+
+/* ! Contact */
+
+#contact .container {
+  gap: 0;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  color: var(--heading);
+  box-sizing: border-box;
+  display: inline-block;
 }
