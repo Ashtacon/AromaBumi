@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aroma Bumi</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -15,13 +16,13 @@
       <div class="nav-link">
         <ul>
           <li>
-            <a href="">Products</a>
+            <a href="pages/products.html">Products</a>
           </li>
           <li>
-            <a href="">Store</a>
+            <a href="pages/store.html">Store</a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a href="pages/contact.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -46,10 +47,10 @@
         <!-- ! Content -->
 
         <div class="content-wrapper">
-          <div class="content">
+          <div class="content" data-aos="fade-right">
             <img src="img/Who are we.jpg" alt="who" class="who" />
           </div>
-          <div class="description">
+          <div class="description" data-aos="fade-left">
             <h1 class="content-title">Who are we?</h1>
             <p>
               We are Jakarta-based coffee and tea house focused on
@@ -59,7 +60,7 @@
           </div>
         </div>
         <div class="content-wrapper">
-          <div class="description">
+          <div class="description showcase-desc" data-aos="fade-right">
             <h1 class="content-title">Product Showcase</h1>
             <p>
               We are Jakarta-based coffee and tea house focused on
@@ -68,15 +69,15 @@
             </p>
             <button class="btn-content">See our coffe and tea</button>
           </div>
-          <div class="content">
+          <div class="content showcase-img" data-aos="fade-left">
             <img src="img/Our products.jpg" alt="products" class="products" />
           </div>
         </div>
         <div class="content-wrapper">
-          <div class="content">
+          <div class="content" data-aos="fade-right">
             <img src="img/Hang out with us.jpg" alt="hang" class="hang" />
           </div>
-          <div class="description">
+          <div class="description" data-aos="fade-left">
             <h1 class="content-title">Hang out with us!</h1>
             <p>
               We are Jakarta-based coffee and tea house focused on
@@ -90,8 +91,10 @@
         <!-- ! Album -->
         <section id="album">
           <div class="container">
-            <h1>Find us out at instagram <a href="#">@aroma_bumi</a>!</h1>
-            <div class="album-wrapper">
+            <h1 data-aos="fade-up">
+              Find us out at instagram <a href="#">@aroma_bumi</a>!
+            </h1>
+            <div class="album-wrapper" data-aos="flip-up">
               <img src="img/Feed 1.png" alt="" />
               <img src="img/Feed 2.png" alt="" />
               <img src="img/Feed 3.png" alt="" />
@@ -106,12 +109,12 @@
         <!-- ! Awal Contact -->
         <section id="contact">
           <div class="container">
-            <h1 class="contact-title">Ask us more!</h1>
-            <p>
+            <h1 class="contact-title" data-aos="fade-up">Ask us more!</h1>
+            <p data-aos="fade-up">
               If you have any questions or interested to cooperate with us,
               kindly let us know here:
             </p>
-            <button class="btn-content">Contact Us</button>
+            <button class="btn-content" data-aos="fade-up">Contact Us</button>
           </div>
         </section>
       </div>
@@ -119,8 +122,43 @@
     <!-- ! Akhir Main -->
 
     <!-- ! Awal Footer -->
-    <section id="footer"></section>
+    <section id="footer">
+      <div class="footer-wrapper">
+        <div class="logo-wrapper">
+          <div class="logo">
+            <img src="img/Logo White.png" alt="" width="250 px" />
+          </div>
+          <div class="message">
+            <img src="img/MAIL ICON.svg" alt="" width="35px" />
+            <img src="img/PHONE ICON.svg" alt="" width="35px" />
+          </div>
+        </div>
+        <div class="products-footer">
+          <h2 class="title-footer">Products</h2>
+          <ul>
+            <li><a href="pages/products.html">Coffee Based</a></li>
+            <li><a href="pages/products.html">Non-Coffee</a></li>
+            <li><a href="pages/products.html">Tea Based</a></li>
+          </ul>
+        </div>
+        <div class="store-footer">
+          <h2 class="title-footer">Store</h2>
+          <a href="#">Location</a>
+        </div>
+        <div class="contact-footer">
+          <h2 class="title-footer">Contact</h2>
+          <a href="#">Costomer Service</a>
+        </div>
+        <div class="copyright">
+          <p>2022 © Designed by Progate Indonesia</p>
+        </div>
+      </div>
+    </section>
     <!-- ! Akhir footer -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
