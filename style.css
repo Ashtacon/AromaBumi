@@ -365,6 +365,88 @@ p.price {
   -o-transition: 0.2s ease;
 }
 
+/* ! Store */
+
+#store {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.products-store {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.store-detail > * {
+  padding: 0.5rem;
+}
+
+.products-desc {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 65%;
+}
+
+.cofname {
+  color: #0f8b8d;
+  font-size: 2rem;
+  margin-top: -8rem;
+}
+
+.cofprice {
+  color: #0f8b8d;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+.cofdesc {
+  color: #0f8b8d;
+  font-weight: 400;
+  font-size: 2.5rem;
+  border-bottom: 4px solid #ec9a29;
+  width: 25%;
+  padding-bottom: 0.5rem;
+}
+
+.cofdetail {
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.btn-coffe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #a8201a;
+  width: fit-content;
+  padding: 0 1rem;
+  padding-right: 2rem;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.btn-coffe img {
+  rotate: 180deg;
+  scale: 0.7;
+}
+
+.btn-coffe p {
+  color: white !important;
+}
+
+#find {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
 /* ! Tablet Responsive */
 @media (max-width: 850px) {
   /* Navbar */
@@ -589,6 +671,82 @@ p.price {
     align-items: center;
     color: white;
     font-size: 1.2rem;
+  }
+
+  /* ! Store */
+
+  #store {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  .products-store {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 6rem;
+  }
+  .store-detail > * {
+    padding: 5px 0;
+  }
+  .store-detail {
+    margin-left: 4rem;
+  }
+  .products-desc {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 85%;
+  }
+
+  .cofname {
+    color: #0f8b8d;
+    font-size: 2rem;
+  }
+
+  .cofprice {
+    color: #0f8b8d;
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  .cofdesc {
+    color: #0f8b8d;
+    font-weight: 400;
+    font-size: 2.5rem;
+    border-bottom: 4px solid #ec9a29;
+    width: 100%;
+  }
+
+  .cofdetail {
+    width: 100%;
+  }
+
+  .btn-coffe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #a8201a;
+    width: fit-content;
+    padding: 0 1rem;
+    padding-right: 2rem;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+  }
+
+  .btn-coffe img {
+    rotate: 180deg;
+    scale: 0.7;
+  }
+
+  .btn-coffe p {
+    color: white !important;
   }
 }
 /* ! Responsive Normal Phone */
@@ -924,6 +1082,20 @@ p.price {
     -moz-transition: 0.2s ease;
     -ms-transition: 0.2s ease;
     -o-transition: 0.2s ease;
+  }
+  /* ! Store */
+  .store-detail {
+    scale: 0.7;
+    margin-left: 7.5rem;
+  }
+  .products-desc {
+    margin: 1rem 0;
+  }
+  .cofdesc {
+    font-size: 1.5rem;
+  }
+  .btn-coffe {
+    font-size: 0.8rem;
   }
 }
 
