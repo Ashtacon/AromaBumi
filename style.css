@@ -444,8 +444,46 @@ p.price {
 
 #find {
   display: flex;
-  justify-content: start;
+}
+.alamat-wrapper {
+  padding: 3rem;
+}
+.alamat {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.5rem;
+  justify-content: center;
+}
+.alamat-box {
+  padding: 1rem 1rem;
+  border: 1px solid #000;
+  width: 55%;
+  margin: 1rem;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.alamat-box p {
+  padding-bottom: 2rem;
+}
+.alamat-title {
+  padding-bottom: 1rem;
+}
+
+.gmaps {
+  display: flex;
   align-items: center;
+  justify-content: center;
+}
+iframe {
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 /* ! Tablet Responsive */
 @media (max-width: 850px) {
